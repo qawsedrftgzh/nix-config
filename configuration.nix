@@ -249,7 +249,7 @@
       # Note: The private key can also be included inline via the privateKey option,
       # but this makes the private key world-readable; thus, using privateKeyFile is
       # recommended.
-      privateKeyFile = "path to private key file";
+      #privateKeyFile = "path to private key file";
 
       peers = [
         # For a client configuration, one peer entry for the server will suffice.
