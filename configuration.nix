@@ -256,7 +256,7 @@
 
         {
           # Public key of the server (not a file path).
-          publicKey = "{server public key}";
+          publicKey = "{U/mKIJJl2leHfNjX9PrNNHOKv/OlmUeNgwKOJ9WQxAE=}";
 
           # Forward all the traffic via VPN.
           allowedIPs = ["0.0.0.0/0"];
@@ -264,7 +264,7 @@
           #allowedIPs = [ "10.100.0.1" "91.108.12.0/22" ];
 
           # Set this to the server IP and port.
-          endpoint = "{server ip}:51820"; # ToDo: route to endpoint not automatically configured https://wiki.archlinux.org/index.php/WireGuard#Loop_routing https://discourse.nixos.org/t/solved-minimal-firewall-setup-for-wireguard-client/7577
+          endpoint = "192.168.2.71:51820"; # ToDo: route to endpoint not automatically configured https://wiki.archlinux.org/index.php/WireGuard#Loop_routing https://discourse.nixos.org/t/solved-minimal-firewall-setup-for-wireguard-client/7577
 
           # Send keepalives every 25 seconds. Important to keep NAT tables alive.
           persistentKeepalive = 25;
