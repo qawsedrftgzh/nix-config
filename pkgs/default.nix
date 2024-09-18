@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    fcitx5-rime
     hyprpicker
     swayidle
     blueman
