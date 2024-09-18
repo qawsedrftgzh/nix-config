@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    glm
     networkmanagerapplet
     openvpn3
     wireguard-tools
