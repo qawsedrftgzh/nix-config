@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [
     wireguard-tools
     wireguard-tools
+    wireguard-tools
     fcitx5-rime
     hyprpicker
     swayidle
