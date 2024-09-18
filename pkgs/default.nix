@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    openvpn3
     wireguard-tools
     wireguard-tools
     wireguard-tools
