@@ -6,6 +6,8 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    wireguard
+    wireguard-tools
     fcitx5-rime
     hyprpicker
     swayidle
