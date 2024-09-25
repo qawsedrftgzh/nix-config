@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    arduino
     libnotify
     julia-bin
     ninja
