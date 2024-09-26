@@ -7,6 +7,7 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     endless-sky
+    endless-sky
     arduino
     libnotify
     julia-bin
