@@ -26,8 +26,8 @@
     blueman
     killall
     catppuccin-sddm
-    python311Packages.pip
-    python312Packpkgs-unstable.ages.pyquery
+    #python311Packages.pip
+    #python312Packpkgs-unstable.ages.pyquery
     pkgs-unstable.wlogout
     pkgs-unstable.eww
     pkgs-unstable.hyprlock
