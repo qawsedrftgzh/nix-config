@@ -27,10 +27,11 @@
     killall
     catppuccin-sddm
     python311Packages.pip
-    python312Packages.pyquery
+    python312Packpkgs-unstable.ages.pyquery
     pkgs-unstable.wlogout
     pkgs-unstable.eww
     pkgs-unstable.hyprlock
+    pkgs-unstable.hyprland
     pulseaudio
     grim
     slurp
@@ -42,7 +43,7 @@
     bemenu
     rofi
     hyprpaper
-    waybar
+    pkgs-unstable.waybar
     pkgs-unstable.warp-terminal
     ripgrep
     luajitPackages.luarocks
