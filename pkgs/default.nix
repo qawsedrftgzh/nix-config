@@ -32,7 +32,7 @@
     pkgs-unstable.wlogout
     pkgs-unstable.eww
     pkgs-unstable.hyprlock
-    #pkgs-unstable.hyprland
+    pkgs-unstable.hyprland
     pulseaudio
     grim
     slurp
