@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    hyprlandPlugins.hyprexpo
     gnome.gdm
     endless-sky
     endless-sky
