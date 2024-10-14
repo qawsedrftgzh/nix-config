@@ -147,6 +147,10 @@
     "openssl-1.1.1w"
   ];
 
+  wayland.windowManager.hyprland.plugins = [
+    pkgs.hyprlandPlugins.hyprexpo
+  ];
+
   imports = [
     ./input.nix
     ./fonts.nix
