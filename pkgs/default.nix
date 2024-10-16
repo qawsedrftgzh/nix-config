@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    python311Packages.pydbus
     python312Packages.pydbus
     ardour
     pywal
