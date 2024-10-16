@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    ardour
     pywal
     neo-cowsay
     hyprlandPlugins.hyprexpo
@@ -147,9 +148,9 @@
     "openssl-1.1.1w"
   ];
 
-  wayland.windowManager.hyprland.plugins = [
-    pkgs.hyprlandPlugins.hyprexpo
-  ];
+  #wayland.windowManager.hyprland.plugins = [
+  #  pkgs.hyprlandPlugins.hyprexpo
+  #];
 
   imports = [
     ./input.nix
