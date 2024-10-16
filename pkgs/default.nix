@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    python312Packages.pydbus
     ardour
     pywal
     neo-cowsay
