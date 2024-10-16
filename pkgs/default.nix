@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    python312Packages.dbus-python
     python311Packages.pip
     typst
     python311Packages.pydbus
