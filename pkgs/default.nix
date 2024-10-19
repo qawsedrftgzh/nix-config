@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    helix
     python311Packages.dbus-python
     python312Packages.dbus-python
     python311Packages.pip
