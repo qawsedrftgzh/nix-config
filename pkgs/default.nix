@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    tinymist
     typst-lsp
     helix
     python311Packages.dbus-python
