@@ -6,6 +6,7 @@
 }: {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    jetbrains.idea-community-bin
     sioyek
     mupdf
     tinymist
