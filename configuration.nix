@@ -242,6 +242,12 @@
   networking.firewall = {
     allowedUDPPorts = [51820]; # Clients and peers can use the same port, see listenport
   };
+  programs.nixvim = {
+    enable = true;
+
+    colorschemes.catppuccin.enable = true;
+    plugins.lualine.enable = true;
+  };
   # Enable WireGuard
 
   # This value determines the NixOS release from which the default
