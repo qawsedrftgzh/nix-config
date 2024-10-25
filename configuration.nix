@@ -238,8 +238,7 @@
       STOP_CHARGE_THRESH_BAT0 = 90; # 80 and above it stops charging
     };
   };
-  powerManagement.powert
-  imports = [ <home-manager/nixos> ];op.enable = true;
+  powerManagement.powertop.enable = true;
   services.power-profiles-daemon.enable = false;
   networking.firewall = {
     allowedUDPPorts = [51820]; # Clients and peers can use the same port, see listenport
