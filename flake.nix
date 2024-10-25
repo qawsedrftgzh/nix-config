@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
+
+    home-manager={
+	url = "github:nix-community/home-manager";
+	inputs.nixpkgs.follows = "nixpkgs";
+    }
   };
 
   outputs = {
@@ -23,6 +28,7 @@
           ./configuration.nix
           ./home-manager.nix
           ./pkgs/default.nix
+	  inputs.home-manager.nixosModules.default
         ];
         specialArgs = {
           inherit inputs;
