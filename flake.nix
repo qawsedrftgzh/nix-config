@@ -21,6 +21,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ./home-manager.nix
           ./pkgs/default.nix
         ];
         specialArgs = {
