@@ -3,6 +3,7 @@
   pkgs,
   ...
 }: {
+  imports = [<home-manager/nixos>];
   users.users.eve.isNormalUser = true;
   home-manager.users.eve = {pkgs, ...}: {
     home.packages = [pkgs.atool pkgs.httpie];
