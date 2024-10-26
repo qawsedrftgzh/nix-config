@@ -13,6 +13,8 @@
     inputs.home-manager.nixosModules.default
   ];
 
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -48,8 +50,6 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -63,11 +63,6 @@
   #services.xserver.displayManager.sddm.enable = true;
   #services.xserver.desktopManager.plasma6.enable = true;
   #programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
-  services.xserver.displayManager.sddm = {
-    enable = false;
-    theme = "catppuccin-mocha";
-    package = pkgs.kdePackages.sddm;
-  };
 
   # Hyprland
   programs.hyprland.enable = true;
@@ -91,7 +86,7 @@
   # services.printing.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
+  #sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -119,6 +114,13 @@
       #  thunderbird
       firefox
     ];
+  };
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "mylan" = import ./home.nix;
+    };
   };
 
   security.sudo.extraRules = [
